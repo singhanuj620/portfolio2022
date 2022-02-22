@@ -1,0 +1,48 @@
+.navbar_btn_container{
+    display: flex;
+    flex-direction: row;
+    width: 20%;
+    justify-content: space-around;
+}
+
+.navbar_detail_container{
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    align-items: center;
+    height: 100%;
+}
+
+.navbar_title{
+    font-family: Proxima;
+    font-weight: 800;
+    font-size:2rem;
+    letter-spacing:2px;
+    padding-right: 2%;
+    margin-right: 2%;
+    margin-left: 1%;
+    border-right: 5px solid black;
+}
+
+.navbar_tabs{
+    font-family: Proxima;
+    font-size:1.2rem;
+    margin: 0% 1%;
+    cursor: pointer;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.navbar_socials_container{
+    display: flex;
+    flex-direction: row;
+    width: 12%;
+    height: 100%;
+}
+.navbar_icon{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

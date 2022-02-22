@@ -1,9 +1,14 @@
 import './App.css';
 
-function App() {
+import Header from './Containers/Header/header';
+
+const App = () => {
   return (
     <div className="App">
-      Anuj
+      <Header />
+      <div className="test sample">
+        anuj singh uis a good boy
+      </div>
     </div>
   );
 }
