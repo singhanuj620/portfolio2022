@@ -1,0 +1,22 @@
+.projects_container {
+    padding: 2%;
+}
+
+.projects_title{
+    font-family: Proxima;
+    font-weight: 800;
+    font-size:3rem;
+    text-transform:uppercase;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 3%;
+    letter-spacing:2px;
+}
+
+.projects_title > div {
+    background-color: black;
+    width: 4rem;
+    height: 2rem;
+    margin-right: 1%;
+}

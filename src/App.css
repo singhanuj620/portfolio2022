@@ -8,3 +8,17 @@
 .test{
     border: 1px solid red;
 }
+
+.link{
+    color:inherit;
+    text-decoration:none;
+}
+
+.link:hover {
+    color: inherit;
+    text-decoration: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}

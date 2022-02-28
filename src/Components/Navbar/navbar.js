@@ -6,7 +6,7 @@ import { FaGithub, FaLinkedin } from 'react-icons/fa';
 
 const NavbarComp = () => {
     const [prevScrollPos, setPrevScrollPos] = useState(0);
-    const [visible, setVisible] = useState(true);
+    const [visible, setVisible] = useState(false);
 
     const navbarStyles = {
         position: 'fixed',
@@ -45,11 +45,12 @@ const NavbarComp = () => {
         <div style={{ ...navbarStyles, top: visible ? '0' : '-60px' }}>
             <div className="navbar_detail_container">
                 <div className="navbar_title">Anuj Singh</div>
-                <div className="navbar_tabs"> {`< Projects />`} </div>
-                <div className="navbar_tabs"> {`< About />`} </div>
+                <div className="navbar_tabs tabs_hover"> <a href="#projects" className="link">{`< Projects />`} </a></div>
+                <div className="navbar_tabs tabs_hover"> <a href="#blogs" className="link">{`< Blogs />`} </a></div>
+                <div className="navbar_tabs tabs_hover"> <a href="#about" className="link">{`< About />`} </a></div>
                 <div className="navbar_tabs navbar_socials_container">
-                    <div className="navbar_icon"> <div><FaGithub /> </div></div>
-                    <div className="navbar_icon"> <div><FaLinkedin /> </div></div>
+                    <div className="navbar_icon tabs_hover"> <div><FaGithub /> </div></div>
+                    <div className="navbar_icon tabs_hover"> <div><FaLinkedin /> </div></div>
                 </div>
             </div>
             <div className="navbar_btn_container">

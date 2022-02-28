@@ -34,7 +34,7 @@
 }
 
 .dp_img{
-    width: 35rem;
+    width: 32rem;
     object-fit: contain;
 }
 
@@ -86,8 +86,4 @@
 .header_btn_div:hover span:after {
     opacity: 1;
     right: 0;
-}
-
-.sample{
-    height:100vh;
 }
