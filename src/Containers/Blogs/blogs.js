@@ -1,15 +1,16 @@
 import React from 'react'
-import './projects.css'
-import Project from '../../Components/Project/project'
+import './blogs.css'
+import Blog from '../../Components/Blog/blog'
 import { info } from '../../info'
-const projects = () => {
+const Blogs = () => {
+
     return (
         <div className="projects_container">
-            <div className="projects_title"><div></div>Projects</div>
+            <div className="projects_title"><div></div>Blogs</div>
             {
                 info.projects.map((project, index) => {
                     return (
-                        <Project key={index} project={project} />
+                        <Blog key={index} project={project} />
                     )
                 })
             }
@@ -17,4 +18,4 @@ const projects = () => {
     )
 }
 
-export default projects
+export default Blogs
