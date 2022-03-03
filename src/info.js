@@ -47,5 +47,12 @@ export const info = {
             url: 'https://dev.to/singhanuj620/urlshortner-using-nodejs-and-mongodb-25ec',
             image: 'https://res.cloudinary.com/practicaldev/image/fetch/s--mCeV2cmD--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/i/w5idkgb2ua68vsk0nwup.png'
         }
+    ],
+    skillsIcon: [
+        'https://img.icons8.com/color/240/000000/javascript--v1.png',
+        'https://img.icons8.com/officel/80/000000/react.png',
+        'https://img.icons8.com/color/144/000000/nodejs.png',
+        'https://img.icons8.com/color/144/000000/python--v1.png',
+        'https://img.icons8.com/color/144/000000/mongodb.png'
     ]
 }

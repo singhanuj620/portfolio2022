@@ -20,3 +20,8 @@
     height: 2rem;
     margin-right: 1%;
 }
+
+.projects_github_profile > button{
+    width: 90% !important;
+    margin-left: 5% !important;
+}

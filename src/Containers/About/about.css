@@ -1,8 +1,8 @@
-.blogs_container {
+.about_container {
     padding: 2%;
 }
 
-.blogs_title {
+.about_title {
     font-family: Proxima;
     font-weight: 800;
     font-size: 3rem;
@@ -14,18 +14,24 @@
     letter-spacing: 2px;
 }
 
-.blogs_title>div {
+.about_title>div {
     background-color: black;
     width: 4rem;
     height: 2rem;
     margin-right: 1%;
 }
 
-.blogs_cards_div{
+.about_info{
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: flex-start;
-    height: auto;
+    justify-content:flex-start;
+}
+
+.about_timeline{
+    width: 80%;
+    margin-left:-30%;
+}
+
+.about_icons{
+    width: 50%;
 }
