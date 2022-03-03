@@ -8,7 +8,8 @@ import TimelineConnector from '@mui/lab/TimelineConnector';
 import TimelineContent from '@mui/lab/TimelineContent';
 import TimelineDot from '@mui/lab/TimelineDot';
 import LaptopMacIcon from '@mui/icons-material/LaptopMac';
-import { LibraryBooksIcon, SchoolIcon } from '@mui/icons-material';
+import LibraryBooksIcon from '@mui/icons-material/LibraryBooks';
+import SchoolIcon from '@mui/icons-material/School';
 import Typography from '@mui/material/Typography';
 import Tooltip from '@mui/material/Tooltip';
 
@@ -17,7 +18,7 @@ const About = () => {
     return (
         <div className="about_container">
             <div className="about_title"><div></div>About</div>
-            <div className="about_info test">
+            <div className="about_info">
                 <div className="about_timeline">
                     <Timeline>
                         <TimelineItem>
@@ -85,13 +86,15 @@ const About = () => {
                         </TimelineItem>
                     </Timeline>
                 </div>
-                <div className="about_icons test">
+                <div className="about_icons">
                     {
-                        info.skillsIcon.map((url, index) => {
+                        info.skillsIcon.map((ele, index) => {
                             return (
-                                <div>
-                                    <img src={url} alt={index} />
-                                </div>
+                                <Tooltip title={ele.name}>
+                                    <div className="about_icons_div">
+                                        <img src={ele.url} alt={ele.name} className="about_icons_img" />
+                                    </div>
+                                </Tooltip>
                             )
                         })
                     }

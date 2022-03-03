@@ -18,6 +18,7 @@
 .project_img_div {
     padding: 1%;
     margin: 3% 0%;
+    cursor: pointer;
 }
 
 .project_img {

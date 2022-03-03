@@ -1,3 +1,7 @@
+import FreeCodeCamp from "./Images/Projects/freecodecamp.png"
+import UrlShortner from "./Images/Projects/urlshortner.png"
+import InstagramBot from "./Images/Projects/instagrambot.png"
+
 export const info = {
     name: 'Anuj Singh',
     projects: [
@@ -10,20 +14,25 @@ export const info = {
             tags: ['nodejs', 'reactjs', 'js', 'css', 'html']
         },
         {
-            title: 'Project 2',
-            description: 'This is a project description',
-            image: 'https://images.unsplash.com/photo-1527219525722-f9767a7f2884?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=873&q=80',
-            github: '',
-            demo: '',
-            tags: ['nodejs', 'reactjs', 'js', 'css', 'html']
+            title: 'Web Scrapping Project',
+            description: 'This project will scrap the freecodecamp website and display the data in a table with the help of Cherrio and ExpressJS',
+            image: FreeCodeCamp,
+            github: 'https://github.com/singhanuj620/freecodecamp_scrap',
+            demo: 'https://scrapcodecamp.herokuapp.com/'
         },
         {
-            title: 'Project 3',
-            description: 'This is a project description',
-            image: 'https://images.unsplash.com/photo-1527219525722-f9767a7f2884?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=873&q=80',
-            github: '',
+            title: 'URL Shortner with nodeJs and mongoDb',
+            description: 'Web Application made with nodejs and mongoDb that shorts the full url and tracks the number of times it is clicked.',
+            image: UrlShortner,
+            github: 'https://github.com/singhanuj620/urlShortner',
             demo: '',
-            tags: ['nodejs', 'reactjs', 'js', 'css', 'html']
+        },
+        {
+            title: 'Instagram Bot',
+            description: 'Web Application made with nodejs and mongoDb that shorts the full url and tracks the number of times it is clicked.',
+            image: InstagramBot,
+            github: 'https://github.com/singhanuj620/Instagram_Bot',
+            demo: '',
         }
     ],
     blogs: [
@@ -49,10 +58,12 @@ export const info = {
         }
     ],
     skillsIcon: [
-        'https://img.icons8.com/color/240/000000/javascript--v1.png',
-        'https://img.icons8.com/officel/80/000000/react.png',
-        'https://img.icons8.com/color/144/000000/nodejs.png',
-        'https://img.icons8.com/color/144/000000/python--v1.png',
-        'https://img.icons8.com/color/144/000000/mongodb.png'
+        { name: 'Javascript', url: 'https://img.icons8.com/color/240/000000/javascript--v1.png' },
+        { name: 'ReactJS', url: 'https://img.icons8.com/officel/80/000000/react.png' },
+        { name: 'NodeJS', url: 'https://img.icons8.com/color/144/000000/nodejs.png' },
+        { name: 'Python', url: 'https://img.icons8.com/color/144/000000/python--v1.png' },
+        { name: 'MongoDB', url: 'https://img.icons8.com/color/144/000000/mongodb.png' },
+        { name: 'Git', url: 'https://img.icons8.com/color/144/000000/git.png' },
+        { name: 'AdobeXD', url: 'https://img.icons8.com/color/144/000000/adobe-xd--v1.png' }
     ]
 }

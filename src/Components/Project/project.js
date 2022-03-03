@@ -4,7 +4,10 @@ import './project.css'
 const project = ({ project }) => {
     return (
         <div className="project_container">
-            <div className="project_img_div">
+            <div className="project_img_div" onClick={() => window.open(
+                project.github,
+                '_blank'
+            )}>
                 <img src={project.image} alt={project.title} className="project_img" />
             </div>
             <div className="project_info">

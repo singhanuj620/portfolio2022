@@ -49,8 +49,10 @@ const NavbarComp = () => {
                 <div className="navbar_tabs tabs_hover"> <a href="#blogs" className="link">{`< Blogs />`} </a></div>
                 <div className="navbar_tabs tabs_hover"> <a href="#about" className="link">{`< About />`} </a></div>
                 <div className="navbar_tabs navbar_socials_container">
-                    <div className="navbar_icon tabs_hover"> <div><FaGithub /> </div></div>
-                    <div className="navbar_icon tabs_hover"> <div><FaLinkedin /> </div></div>
+                    <div className="navbar_icon tabs_hover" onClick={() => window.open('https://github.com/singhanuj620',
+                        '_blank')}> <div><FaGithub /> </div></div>
+                    <div className="navbar_icon tabs_hover" onClick={() => window.open('www.linkedin.com/in/anuj-singh-007',
+                        '_blank')}> <div><FaLinkedin /> </div></div>
                 </div>
             </div>
             <div className="navbar_btn_container">
