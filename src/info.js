@@ -1,17 +1,17 @@
 import FreeCodeCamp from "./Images/Projects/freecodecamp.png"
 import UrlShortner from "./Images/Projects/urlshortner.png"
 import InstagramBot from "./Images/Projects/instagrambot.png"
+import Inventory from "./Images/Projects/Inventory.png"
 
 export const info = {
     name: 'Anuj Singh',
     projects: [
         {
-            title: 'Project 1',
-            description: 'This is a project description',
-            image: 'https://images.unsplash.com/photo-1527219525722-f9767a7f2884?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=873&q=80',
+            title: 'Inventory management application with reactJs',
+            description: 'This application was a industry based project which was built using reactJs along with redux. The objective of this application is to keep track of the food items that to be brought for a store for the respective upcoming dates such that stocks are effectively organized and managed. ',
+            image: Inventory,
             github: '',
             demo: '',
-            tags: ['nodejs', 'reactjs', 'js', 'css', 'html']
         },
         {
             title: 'Web Scrapping Project',
