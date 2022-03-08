@@ -1,16 +1,23 @@
 import FreeCodeCamp from "./Images/Projects/freecodecamp.png"
 import UrlShortner from "./Images/Projects/urlshortner.png"
 import InstagramBot from "./Images/Projects/instagrambot.png"
-import Inventory from "./Images/Projects/Inventory.png"
+import Inventory from "./Images/Projects/inventory.png"
 
 export const info = {
     name: 'Anuj Singh',
     projects: [
         {
             title: 'Inventory management application with reactJs',
-            description: 'This application was a industry based project which was built using reactJs along with redux. The objective of this application is to keep track of the food items that to be brought for a store for the respective upcoming dates such that stocks are effectively organized and managed. ',
+            description: 'This application was a industry based project which was built using reactJs along with redux. The objective of this application is to keep track of the food items that to be brought for a store for the respective upcoming dates such that stocks are effectively organized and managed. Some of the features were the concurrency between stores, store owners. This application was designed to be used by the store owners and the inventory management team on iPod, and iPad. I was in front-end team working on the fixing of bugs, optimizations and features like graphql calls that made to the front end side and many more.',
             image: Inventory,
             github: '',
+            demo: '',
+        },
+        {
+            title: 'URL Shortner with nodeJs and mongoDb',
+            description: 'Web Application made with nodejs and mongoDb that shorts the full url and tracks the number of times it is clicked. It was a side project which was made in a hackathon that afterwards was made to use in college fest for more effective management like to track the popularity and engagement of the event hosted by students among the public. This project was suffient enough to make use of CRUD operations in the mongoDb via expressJs.',
+            image: UrlShortner,
+            github: 'https://github.com/singhanuj620/urlShortner',
             demo: '',
         },
         {
@@ -21,15 +28,8 @@ export const info = {
             demo: 'https://scrapcodecamp.herokuapp.com/'
         },
         {
-            title: 'URL Shortner with nodeJs and mongoDb',
-            description: 'Web Application made with nodejs and mongoDb that shorts the full url and tracks the number of times it is clicked.',
-            image: UrlShortner,
-            github: 'https://github.com/singhanuj620/urlShortner',
-            demo: '',
-        },
-        {
             title: 'Instagram Bot',
-            description: 'Web Application made with nodejs and mongoDb that shorts the full url and tracks the number of times it is clicked.',
+            description: 'This bot was a fun project when the instagram algorithm was promoting the accounts that were highly engaging with other posts. With the help of this bot you can login into your instagram profile via chromium browser and for a provided hashtag this bot will go and like post on your behalf.',
             image: InstagramBot,
             github: 'https://github.com/singhanuj620/Instagram_Bot',
             demo: '',

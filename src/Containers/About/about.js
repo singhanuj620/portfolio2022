@@ -90,7 +90,7 @@ const About = () => {
                     {
                         info.skillsIcon.map((ele, index) => {
                             return (
-                                <Tooltip title={ele.name}>
+                                <Tooltip title={ele.name} key={index}>
                                     <div className="about_icons_div">
                                         <img src={ele.url} alt={ele.name} className="about_icons_img" />
                                     </div>
