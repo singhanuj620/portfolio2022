@@ -44,7 +44,7 @@ const NavbarComp = () => {
     return (
         <div style={{ ...navbarStyles, top: visible ? '0' : '-60px' }}>
             <div className="navbar_detail_container">
-                <div className="navbar_title">Anuj Singh</div>
+                <div className="navbar_title"><a href="#" className="link navbar-title">Anuj Singh </a></div>
                 <div className="navbar_tabs tabs_hover"> <a href="#projects" className="link">{`< Projects />`} </a></div>
                 <div className="navbar_tabs tabs_hover"> <a href="#blogs" className="link">{`< Blogs />`} </a></div>
                 <div className="navbar_tabs tabs_hover"> <a href="#about" className="link">{`< About />`} </a></div>
@@ -56,8 +56,8 @@ const NavbarComp = () => {
                 </div>
             </div>
             <div className="navbar_btn_container">
-                <Button variant="warning" className="navbar_btn">Download CV</Button>
-                <Button variant="warning" className="navbar_btn">Contact</Button>
+                <Button variant="warning" className="navbar_btn"><a href="https://drive.google.com/file/d/1IJs3MkQlTwzyf-EdcytPNLVDSeO91X-o/view?usp=share_link" className="link" target="_blank">Download CV</a></Button>
+                <Button variant="warning" className="navbar_btn"><a href="#contact" className="link">Contact</a></Button>
             </div>
         </div>
     );

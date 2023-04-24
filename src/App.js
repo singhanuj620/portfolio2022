@@ -4,6 +4,7 @@ import Header from './Containers/Header/header';
 import Projects from './Containers/Projects/projects'
 import Blogs from './Containers/Blogs/blogs'
 import About from './Containers/About/about'
+import Contact from './Containers/Contact/contact'
 
 const App = () => {
   return (
@@ -21,6 +22,10 @@ const App = () => {
       <br></br>
       <br></br>
       <About />
+      <span id="contact"></span>
+      <br></br>
+      <br></br>
+      <Contact />
     </div>
   );
 }

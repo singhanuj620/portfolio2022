@@ -2,30 +2,38 @@ import FreeCodeCamp from "./Images/Projects/freecodecamp.png"
 import UrlShortner from "./Images/Projects/urlshortner.png"
 import InstagramBot from "./Images/Projects/instagrambot.png"
 import Inventory from "./Images/Projects/inventory.png"
+import Typeform from "./Images/Projects/typeform.png"
 
 export const info = {
     name: 'Anuj Singh',
     projects: [
         {
-            title: 'Inventory management application with reactJs',
-            description: 'This application was a industry based project which was built using reactJs along with redux. The objective of this application is to keep track of the food items that to be brought for a store for the respective upcoming dates such that stocks are effectively organized and managed. Some of the features were the concurrency between stores, store owners. This application was designed to be used by the store owners and the inventory management team on iPod, and iPad. I was in front-end team working on the fixing of bugs, optimizations and features like graphql calls that made to the front end side and many more.',
+            title: 'Starbucks Stock Control & Optimization',
+            description: 'Developed using cutting-edge technologies such as ReactJS, Redux, and Jest unit testing, this suite of three powerful front-end applications was meticulously crafted to meet the specific needs of Starbucks, a prominent player in the food and beverage industry. Designed to enable store owners to efficiently manage their inventory levels across multiple geographic locations, these applications leverage the power of modern frontend development to provide a seamless and intuitive user experience and dynamic inventory management based on customer demand and occasion, this suite represents a significant step forward in the field of inventory management. By leveraging the power of ReactJS and other frontend technologies, Starbucks can now provide its store owners with an unprecedented level of control and visibility over their inventory, ensuring that they can always meet the needs of their customers, no matter where they are located.',
             image: Inventory,
             github: '',
             demo: '',
         },
         {
-            title: 'URL Shortner with nodeJs and mongoDb',
-            description: 'Web Application made with nodejs and mongoDb that shorts the full url and tracks the number of times it is clicked. It was a side project which was made in a hackathon that afterwards was made to use in college fest for more effective management like to track the popularity and engagement of the event hosted by students among the public. This project was suffient enough to make use of CRUD operations in the mongoDb via expressJs.',
-            image: UrlShortner,
-            github: 'https://github.com/singhanuj620/urlShortner',
-            demo: '',
+            title: 'Typeform Survey Application ReactJS Clone',
+            description: 'This a ReactJS and Redux project that emulates the popular survey platform Typeform. It offers an intuitive and responsive user interface to create and analyze custom surveys, collect data and share results. It can be easily integrated with other technologies to suit a wide range of applications. With its modern frontend technologies, the Typeform Survey Application ReactJS Clone is an indispensable tool for businesses, marketers and researchers seeking valuable insights and data.',
+            image: Typeform,
+            github: 'https://github.com/singhanuj620/typeform_clone',
+            demo: 'https://master--incomparable-otter-5378ec.netlify.app/',
         },
+        // {
+        //     title: 'URL Shortner with nodeJs and mongoDb',
+        //     description: 'Web Application made with nodejs and mongoDb that shorts the full url and tracks the number of times it is clicked. It was a side project which was made in a hackathon that afterwards was made to use in college fest for more effective management like to track the popularity and engagement of the event hosted by students among the public. This project was suffient enough to make use of CRUD operations in the mongoDb via expressJs.',
+        //     image: UrlShortner,
+        //     github: 'https://github.com/singhanuj620/urlShortner',
+        //     demo: '',
+        // },
         {
             title: 'Web Scrapping Project',
-            description: 'This project will scrap the freecodecamp website and display the data in a table with the help of Cherrio and ExpressJS',
+            description: 'This project utilizes Cheerio and ExpressJS to scrape the freecodecamp website and present the extracted data in a user-friendly table format. By leveraging the power of web scraping and advanced backend frameworks, users can quickly access and analyze a wide range of data related to user profiles, course descriptions, and project details. With its intuitive design and sorting/filtering features, this project offers valuable insights and information that can be used to make informed decisions and strategies.',
             image: FreeCodeCamp,
             github: 'https://github.com/singhanuj620/freecodecamp_scrap',
-            demo: 'https://scrapcodecamp.herokuapp.com/'
+            demo: ''
         },
         {
             title: 'Instagram Bot',
@@ -52,18 +60,18 @@ export const info = {
             image: 'https://res.cloudinary.com/practicaldev/image/fetch/s--shTyd8F7--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/dwcj63fdldqgmvtptoga.png'
         },
         {
-            title: 'UrlShortner using Nodejs and MongoDb | Node.js Project',
-            url: 'https://dev.to/singhanuj620/urlshortner-using-nodejs-and-mongodb-25ec',
-            image: 'https://res.cloudinary.com/practicaldev/image/fetch/s--mCeV2cmD--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/i/w5idkgb2ua68vsk0nwup.png'
+            title: 'useReducer () | React Hook with project',
+            url: 'https://dev.to/singhanuj620/usereducer-react-hook-with-project-1pg',
+            image: 'https://res.cloudinary.com/practicaldev/image/fetch/s--fFxTBYJJ--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/ymvtsr1kbu17lcl61bbm.png'
         }
     ],
     skillsIcon: [
         { name: 'Javascript', url: 'https://img.icons8.com/color/240/000000/javascript--v1.png' },
         { name: 'ReactJS', url: 'https://img.icons8.com/officel/80/000000/react.png' },
+        { name: 'Redux', url: 'https://img.icons8.com/color/48/null/redux.png' },
         { name: 'NodeJS', url: 'https://img.icons8.com/color/144/000000/nodejs.png' },
         { name: 'Python', url: 'https://img.icons8.com/color/144/000000/python--v1.png' },
         { name: 'MongoDB', url: 'https://img.icons8.com/color/144/000000/mongodb.png' },
-        { name: 'Git', url: 'https://img.icons8.com/color/144/000000/git.png' },
-        { name: 'AdobeXD', url: 'https://img.icons8.com/color/144/000000/adobe-xd--v1.png' }
+        { name: 'Git', url: 'https://img.icons8.com/color/144/000000/git.png' }
     ]
 }

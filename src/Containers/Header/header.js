@@ -6,11 +6,6 @@ import { Button } from 'react-bootstrap';
 
 const header = () => {
     return (
-        // <div className="header_container" style={{
-        //     backgroundImage: `url(${Waves})`, backgroundPosition: 'center',
-        //     backgroundSize: 'cover',
-        //     backgroundRepeat: 'no-repeat'
-        // }}>
         <div className="header_container">
             <NavbarComp />
             <div className="header_text_div">
@@ -21,8 +16,12 @@ const header = () => {
                 <br></br>
                 <div className="header_description">
                     <p>
-                        A young software engineer having skills in MERN stack web development and eager to explore more domains and skillsets.
-                        I am a self-motivated, ambitious person with a creative, and adaptable nature.
+                        An entry-level professional, in the hunt for a job as a React JS Developer, with 2 years of
+                        experience in React Concepts, Redux Toolkit, JavaScript, and Front-End Coding, and
+                        understanding of Progressive Web Applications; able to design and build modern user
+                        interface components to enhance application performance along with proficiency in
+                        Typescript, Python, and MERN Stack Web Technologies and Data Structures and
+                        Algorithms.
                     </p>
                     <p>
                         Looking forward to meet you and take this opportunity to grow on a professional and personal level. 👋👋
@@ -30,10 +29,16 @@ const header = () => {
                 </div>
                 <div className="header_btn_container">
                     <div>
-                        <Button variant="primary" className="header_btn_div"><span className="header_btn">Download CV</span></Button>
+                        <Button variant="primary" className="header_btn_div"><span className="header_btn"><a href="https://drive.google.com/file/d/1IJs3MkQlTwzyf-EdcytPNLVDSeO91X-o/view?usp=share_link" className="link" target="_blank">Download CV</a></span></Button>
                     </div>
                     <div>
-                        <Button variant="warning" className="header_btn_div"><span className="header_btn">Projects</span></Button>
+                        <Button variant="warning" className="header_btn_div"><span className="header_btn"><a href="#projects" className="link">Projects</a></span></Button>
+                    </div>
+                    <div>
+                        <Button variant="warning" className="header_btn_div"><span className="header_btn"><a href="#blogs" className="link">Blogs</a></span></Button>
+                    </div>
+                    <div>
+                        <Button variant="primary" className="header_btn_div"><span className="header_btn"><a href="#contact" className="link">Contact</a></span></Button>
                     </div>
                 </div>
             </div>
