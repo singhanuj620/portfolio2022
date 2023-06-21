@@ -16,12 +16,7 @@ const header = () => {
                 <br></br>
                 <div className="header_description">
                     <p>
-                        An entry-level professional, in the hunt for a job as a React JS Developer, with 2 years of
-                        experience in React Concepts, Redux Toolkit, JavaScript, and Front-End Coding, and
-                        understanding of Progressive Web Applications; able to design and build modern user
-                        interface components to enhance application performance along with proficiency in
-                        Typescript, Python, and MERN Stack Web Technologies and Data Structures and
-                        Algorithms.
+                    Experienced software engineer with 2.7 years of professional expertise in frontend web development, specializing in React JS. Proficient in utilizing cutting-edge React concepts and techniques, including Redux for state management and Jest for unit testing. Skilled in developing scalable and maintainable code structures, ensuring optimal performance and seamless user experiences. Demonstrated ability to collaborate effectively in cross-functional teams, adept at leveraging React components, hooks, and state management libraries like Redux to build robust applications. Experienced in writing comprehensive unit tests using Jest to ensure code quality and reliability. Committed to staying updated with the latest trends and best practices in React development.
                     </p>
                     <p>
                         Looking forward to meet you and take this opportunity to grow on a professional and personal level. 👋👋
