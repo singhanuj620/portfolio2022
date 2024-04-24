@@ -42,6 +42,7 @@ const header = () => {
                   href="https://drive.google.com/file/d/1IJs3MkQlTwzyf-EdcytPNLVDSeO91X-o/view?usp=share_link"
                   className="link"
                   target="_blank"
+                  rel="noreferrer"
                 >
                   Download CV
                 </a>
