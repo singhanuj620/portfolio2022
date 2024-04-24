@@ -1,5 +1,4 @@
 import FreeCodeCamp from "./Images/Projects/freecodecamp.png";
-import UrlShortner from "./Images/Projects/urlshortner.png";
 import InstagramBot from "./Images/Projects/instagrambot.png";
 import Inventory from "./Images/Projects/inventory.png";
 import Typeform from "./Images/Projects/typeform.png";
