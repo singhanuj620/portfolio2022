@@ -1,10 +1,10 @@
-import './App.css';
+import "./App.css";
 
-import Header from './Containers/Header/header';
-import Projects from './Containers/Projects/projects'
-import Blogs from './Containers/Blogs/blogs'
-import About from './Containers/About/about'
-import Contact from './Containers/Contact/contact'
+import Header from "./Containers/Header/header";
+import Projects from "./Containers/Projects/projects";
+import Blogs from "./Containers/Blogs/blogs";
+import About from "./Containers/About/about";
+import Contact from "./Containers/Contact/contact";
 
 const App = () => {
   return (
@@ -28,6 +28,6 @@ const App = () => {
       <Contact />
     </div>
   );
-}
+};
 
 export default App;

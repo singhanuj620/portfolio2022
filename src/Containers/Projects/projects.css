@@ -1,27 +1,27 @@
 .projects_container {
-    padding: 2%;
+  padding: 2%;
 }
 
-.projects_title{
-    font-family: Proxima;
-    font-weight: 800;
-    font-size:3rem;
-    text-transform:uppercase;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    margin-bottom: 3%;
-    letter-spacing:2px;
+.projects_title {
+  font-family: Proxima;
+  font-weight: 800;
+  font-size: 3rem;
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 3%;
+  letter-spacing: 2px;
 }
 
 .projects_title > div {
-    background-color: black;
-    width: 4rem;
-    height: 2rem;
-    margin-right: 1%;
+  background-color: black;
+  width: 4rem;
+  height: 2rem;
+  margin-right: 1%;
 }
 
-.projects_github_profile > button{
-    width: 90% !important;
-    margin-left: 5% !important;
+.projects_github_profile > button {
+  width: 90% !important;
+  margin-left: 5% !important;
 }
