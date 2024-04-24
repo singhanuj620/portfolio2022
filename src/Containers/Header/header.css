@@ -87,3 +87,45 @@
   opacity: 1;
   right: 0;
 }
+
+@media only screen and (max-width: 450px) {
+  .header_title {
+    font-size: 4rem;
+    margin-top: 10%;
+  }
+
+  .header_description {
+    font-size: 1.2rem;
+    text-align: left;
+    width: 89vw !important;
+  }
+
+  .header_img_div {
+    width: 10%;
+    margin-top: -5%;
+    position: absolute;
+    top: 120%;
+    left: 46%;
+  }
+
+  .header_text_div {
+    width: 89%;
+    margin-top: 0%;
+  }
+
+  .dp_img {
+    width: 20rem;
+    object-fit: contain;
+  }
+
+  .header_btn_container {
+    margin-top: 90%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .header_btn_div {
+    width: 90vw;
+    margin-bottom: 2%;
+  }
+}

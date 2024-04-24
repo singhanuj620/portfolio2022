@@ -46,7 +46,12 @@ const NavbarComp = () => {
   }, [prevScrollPos, visible]);
 
   return (
-    <div style={{ ...navbarStyles, top: visible ? "0" : "-60px" }}>
+    <div
+      style={{
+        ...navbarStyles,
+        top: visible && window.innerWidth > 600 ? "0" : "-60px",
+      }}
+    >
       <div className="navbar_detail_container">
         <div className="navbar_title">
           <a href="#" className="link navbar-title">

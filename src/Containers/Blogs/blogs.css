@@ -29,3 +29,21 @@
   align-items: flex-start;
   height: auto;
 }
+
+@media only screen and (max-width: 450px) {
+  .blogs_title > div {
+    width: 2rem;
+    height: 2rem;
+    margin: 0% 3%;
+  }
+
+  .blogs_title {
+    font-size: 2.2rem;
+    margin-bottom: 3%;
+  }
+
+  .blogs_cards_div {
+    flex-direction: column;
+    width: 100%;
+  }
+}
