@@ -1,0 +1,10 @@
+.redirect_resume{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #000;
+    color: white;
+    font-size: 2rem;
+    flex-direction: column;
+}

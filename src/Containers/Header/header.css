@@ -36,7 +36,7 @@
 }
 
 .dp_img {
-  width: 32rem;
+  width: 28rem;
   object-fit: contain;
 }
 
@@ -104,7 +104,7 @@
     width: 10%;
     margin-top: -5%;
     position: absolute;
-    top: 120%;
+    top: 116%;
     left: 46%;
   }
 
@@ -114,7 +114,7 @@
   }
 
   .dp_img {
-    width: 20rem;
+    width: 18rem;
     object-fit: contain;
   }
 
