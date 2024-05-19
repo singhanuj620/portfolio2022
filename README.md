@@ -1,4 +1,5 @@
 # Welcome to my portfolio 😎
+[![Netlify Status](https://api.netlify.com/api/v1/badges/94ecb4aa-b3b0-4841-9853-6166752e9f8f/deploy-status)](https://app.netlify.com/sites/anujsinghportfolio/deploys)
 
 > **Resume** : https://drive.google.com/file/d/1IJs3MkQlTwzyf-EdcytPNLVDSeO91X-o/view?usp=share_link
 
