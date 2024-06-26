@@ -80,7 +80,7 @@ const NavbarComp = () => {
           <div
             className="navbar_icon tabs_hover"
             onClick={() =>
-              window.open("https://github.com/singhanuj620", "_blank")
+              window.open("//https://github.com/singhanuj620", "_blank")
             }
           >
             {" "}
@@ -91,7 +91,7 @@ const NavbarComp = () => {
           <div
             className="navbar_icon tabs_hover"
             onClick={() =>
-              window.open("www.linkedin.com/in/anuj-singh-007", "_blank")
+              window.open("//www.linkedin.com/in/anuj-singh-007", "_blank")
             }
           >
             {" "}
