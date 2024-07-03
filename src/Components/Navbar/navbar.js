@@ -80,7 +80,7 @@ const NavbarComp = () => {
           <div
             className="navbar_icon tabs_hover"
             onClick={() =>
-              window.open("//https://github.com/singhanuj620", "_blank")
+              window.open("//www.github.com/singhanuj620", "_blank")
             }
           >
             {" "}
