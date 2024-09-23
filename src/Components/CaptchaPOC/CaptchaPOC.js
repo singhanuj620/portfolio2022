@@ -6,7 +6,7 @@ const CaptchaPOC = () => {
   return (
     <div>
       <ReCAPTCHA
-        sitekey="6LcrkEwqAAAAAC6BkQnziYEDIobeb9uv397tNEdM"
+        sitekey="6LfpoUwqAAAAAOCOc_hYAoC3KUwSTwfruIPOv7UK"
         onChange={onChange}
       />
     </div>
