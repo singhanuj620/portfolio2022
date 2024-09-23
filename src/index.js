@@ -9,6 +9,7 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import RedirectResume from "./Components/RedirectToResume/redirectResume";
+import CaptchaPOC from "./Components/CaptchaPOC/CaptchaPOC";
 
 const router = createBrowserRouter([
   {
@@ -19,6 +20,11 @@ const router = createBrowserRouter([
   {
     path: "/resume",
     element: <RedirectResume />,
+    errorElement: <App />,
+  },
+  {
+    path: "/demo",
+    element: <CaptchaPOC />,
     errorElement: <App />,
   },
 ]);
