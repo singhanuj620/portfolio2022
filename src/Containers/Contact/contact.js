@@ -1,75 +1,92 @@
-import React from "react";
+import React, { useState } from "react";
 import "./contact.css";
 
 const Contact = () => {
+  const [hoveredCard, setHoveredCard] = useState(null);
+
+  const contactInfo = [
+    {
+      id: 1,
+      icon: "✉️",
+      title: "Email",
+      link: "mailto:singhanuj620@gmail.com",
+      display: "singhanuj620@gmail.com",
+      description: "Drop me a line anytime!"
+    },
+    {
+      id: 2,
+      icon: "💼",
+      title: "LinkedIn",
+      link: "https://linkedin.com/in/anuj-singh-007",
+      display: "anuj-singh-007",
+      description: "Let's connect professionally"
+    },
+    {
+      id: 3,
+      icon: "🚀",
+      title: "GitHub",
+      link: "https://github.com/singhanuj620",
+      display: "singhanuj620",
+      description: "Check out my code adventures"
+    },
+    {
+      id: 4,
+      icon: "📝",
+      title: "Dev.to",
+      link: "https://dev.to/singhanuj620",
+      display: "singhanuj620",
+      description: "Read my latest tech thoughts"
+    }
+  ];
+
   return (
-    <div className="contact_container">
-      <div className="contact_title">
-        <div></div>Contact
-      </div>
-      <div className="contact_div">
-        <div className="contact_info">
-          <div className="contact_icon_div">
-            <img
-              src="https://img.icons8.com/bubbles/80/null/new-post.png"
-              alt="anuj_email"
-              className="contact_icon_img"
-            />
-          </div>
-          <div className="contact_info_title">
-          <a href="mailto:singhanuj620@gmail.com" alt="singhanuj620@gmail.com" style={{ textDecoration: "none"}}>singhanuj620@gmail.com</a></div>
+    <div className="contact_container" id="contact">
+      <div className="contact_content">
+        <div className="contact_header">
+          <div className="section_icon">🤝</div>
+          <h2 className="section_title">Let's Connect</h2>
+          <p className="section_description">
+            Have a project in mind or just want to chat about tech? I'd love to hear from you!
+          </p>
         </div>
-        <div className="contact_info">
-          <div className="contact_icon_div">
-            <img
-              src="https://img.icons8.com/fluency/80/null/linkedin-circled.png"
-              alt="anuj_linkedin"
-              className="contact_icon_img"
-            />
-          </div>
-          <div className="contact_info_title">
-            <a
-              href="https://linkedin.com/in/anuj-singh-007"
-              alt="linkedin.com/in/anuj-singh-007"
-              style={{ textDecoration: "none" }}
+        
+        <div className="contact_grid">
+          {contactInfo.map((contact) => (
+            <div
+              key={contact.id}
+              className={`contact_card ${hoveredCard === contact.id ? 'hovered' : ''}`}
+              onMouseEnter={() => setHoveredCard(contact.id)}
+              onMouseLeave={() => setHoveredCard(null)}
             >
-              linkedin.com/in/anuj-singh-007
-            </a>
-          </div>
+              <div className="contact_icon">
+                <span>{contact.icon}</span>
+              </div>
+              <div className="contact_details">
+                <h3 className="contact_title_text">{contact.title}</h3>
+                <a
+                  href={contact.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="contact_link"
+                >
+                  {contact.display}
+                </a>
+                <p className="contact_description">{contact.description}</p>
+              </div>
+            </div>
+          ))}
         </div>
-        <div className="contact_info">
-          <div className="contact_icon_div">
-            <img
-              src="https://img.icons8.com/3d-fluency/80/null/github.png"
-              alt="anuj_github"
-              className="contact_icon_img"
-            />
-          </div>
-          <div className="contact_info_title">
-            <a
-              href="https://github.com/singhanuj620"
-              alt="github.com/singhanuj620"
-              style={{ textDecoration: "none" }}
+
+        <div className="contact_cta">
+          <div className="cta_card">
+            <h3>Ready to start something amazing?</h3>
+            <p>I'm always excited to work on new projects and collaborate with fellow developers.</p>
+            <a 
+              href="mailto:singhanuj620@gmail.com" 
+              className="primary_cta_btn"
             >
-              github.com/singhanuj620
-            </a>
-          </div>
-        </div>
-        <div className="contact_info">
-          <div className="contact_icon_div">
-            <img
-              src="https://img.icons8.com/bubbles/80/null/hand-with-pen.png"
-              alt="anuj_devto"
-              className="contact_icon_img"
-            />
-          </div>
-          <div className="contact_info_title">
-            <a
-              href="https://dev.to/singhanuj620"
-              alt="dev.to/singhanuj620"
-              style={{ textDecoration: "none" }}
-            >
-              dev.to/singhanuj620
+              <span className="btn_icon">🚀</span>
+              <span className="btn_text">Start a Conversation</span>
             </a>
           </div>
         </div>

@@ -1,124 +1,138 @@
-/* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { useState, useEffect } from "react";
 import { debounce } from "../../Utilities/helper";
-import { Button } from "react-bootstrap";
 import "./navbar.css";
-import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaDownload, FaEnvelope } from "react-icons/fa";
 
 const NavbarComp = () => {
   const [prevScrollPos, setPrevScrollPos] = useState(0);
   const [visible, setVisible] = useState(false);
-
-  const navbarStyles = {
-    position: "fixed",
-    height: "60px",
-    width: "95%",
-    backgroundColor: "#4094F8",
-    borderRadius: "5px",
-    transition: "top 0.6s",
-    zIndex: "1",
-    display: "flex",
-    flexDirection: "row",
-    justifyContent: "space-between",
-    alignItems: "center",
-    padding: "0px 10px",
-    boxShadow: "0px 0px 5px #000000",
-  };
+  const [activeSection, setActiveSection] = useState("home");
 
   useEffect(() => {
     const handleScroll = debounce(() => {
-      // find current scroll position
       const currentScrollPos = window.pageYOffset;
 
-      // set state based on location info (explained in more detail below)
       setVisible(
         (prevScrollPos < currentScrollPos &&
           prevScrollPos - currentScrollPos > 150) ||
           currentScrollPos > 500
       );
 
-      // set state to new scroll position
       setPrevScrollPos(currentScrollPos);
-    }, 100);
-    window.addEventListener("scroll", handleScroll);
 
+      // Update active section based on scroll position
+      const sections = [
+        { id: 'home', element: document.querySelector('.header_container') },
+        { id: 'about', element: document.querySelector('.about_container') },
+        { id: 'projects', element: document.querySelector('.projects_container') },
+        { id: 'blogs', element: document.querySelector('.blogs_container') },
+        { id: 'contact', element: document.querySelector('.contact_container') }
+      ];
+
+      let currentSection = 'home';
+      
+      sections.forEach(section => {
+        if (section.element) {
+          const rect = section.element.getBoundingClientRect();
+          // Section is considered active if it's within the viewport (top half)
+          if (rect.top <= window.innerHeight * 0.3 && rect.bottom >= window.innerHeight * 0.3) {
+            currentSection = section.id;
+          }
+        }
+      });
+
+      setActiveSection(currentSection);
+    }, 100);
+
+    window.addEventListener("scroll", handleScroll);
+    
+    // Set initial active section
+    const initialCheck = () => {
+      if (window.pageYOffset === 0) {
+        setActiveSection('home');
+      }
+    };
+    initialCheck();
+    
     return () => window.removeEventListener("scroll", handleScroll);
   }, [prevScrollPos, visible]);
 
+  const navLinks = [
+    { href: "#home", label: "Home", icon: "🏠" },
+    { href: "#about", label: "About", icon: "👨‍💻" },
+    { href: "#projects", label: "Projects", icon: "🚀" },
+    { href: "#blogs", label: "Blogs", icon: "📝" },
+    { href: "#contact", label: "Contact", icon: "📞" }
+  ];
+
   return (
-    <div
-      style={{
-        ...navbarStyles,
-        top: visible && window.innerWidth > 600 ? "0" : "-60px",
-      }}
-    >
-      <div className="navbar_detail_container">
-        <div className="navbar_title">
-          <a href="#" className="link navbar-title">
-            Anuj Singh{" "}
+    <nav className={`modern_navbar ${visible ? 'navbar_visible' : 'navbar_hidden'}`}>
+      <div className="navbar_content">
+        {/* Brand/Logo */}
+        <div className="navbar_brand">
+          <a href="#home" className="brand_link">
+            <span className="brand_icon">✨</span>
+            <span className="brand_text">Anuj Singh</span>
           </a>
         </div>
-        <div className="navbar_tabs tabs_hover">
-          {" "}
-          <a href="#projects" className="link">
-            {`< Projects />`}{" "}
-          </a>
+
+        {/* Navigation Links */}
+        <div className="navbar_links">
+          {navLinks.map((link, index) => (
+            <a 
+              key={index}
+              href={link.href} 
+              className={`nav_link ${activeSection === link.href.substring(1) ? 'active' : ''}`}
+            >
+              <span className="nav_icon">{link.icon}</span>
+              <span className="nav_text">{link.label}</span>
+            </a>
+          ))}
         </div>
-        <div className="navbar_tabs tabs_hover">
-          {" "}
-          <a href="#blogs" className="link">
-            {`< Blogs />`}{" "}
-          </a>
-        </div>
-        <div className="navbar_tabs tabs_hover">
-          {" "}
-          <a href="#about" className="link">
-            {`< About />`}{" "}
-          </a>
-        </div>
-        <div className="navbar_tabs navbar_socials_container">
-          <div
-            className="navbar_icon tabs_hover"
-            onClick={() =>
-              window.open("//www.github.com/singhanuj620", "_blank")
-            }
+
+        {/* Social Links */}
+        <div className="navbar_socials">
+          <a
+            href="https://github.com/singhanuj620"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="social_link"
+            title="GitHub"
           >
-            {" "}
-            <div>
-              <FaGithub />{" "}
-            </div>
-          </div>
-          <div
-            className="navbar_icon tabs_hover"
-            onClick={() =>
-              window.open("//www.linkedin.com/in/anuj-singh-007", "_blank")
-            }
+            <FaGithub />
+          </a>
+          <a
+            href="https://linkedin.com/in/anuj-singh-007"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="social_link"
+            title="LinkedIn"
           >
-            {" "}
-            <div>
-              <FaLinkedin />{" "}
-            </div>
-          </div>
+            <FaLinkedin />
+          </a>
         </div>
-      </div>
-      <div className="navbar_btn_container">
-        <Button variant="warning" className="navbar_btn">
+
+        {/* Action Buttons */}
+        <div className="navbar_actions">
           <a
             href="https://drive.google.com/file/d/1IJs3MkQlTwzyf-EdcytPNLVDSeO91X-o/view?usp=share_link"
-            className="link"
             target="_blank"
-            rel="noreferrer"
+            rel="noopener noreferrer"
+            className="action_btn secondary_btn"
           >
-            Download CV
+            <FaDownload />
+            <span>Resume</span>
           </a>
-        </Button>
-        <Button variant="warning" className="navbar_btn">
-          <a href="#contact" className="link">
-            Contact
+          <a
+            href="#contact"
+            className="action_btn primary_btn"
+          >
+            <FaEnvelope />
+            <span>Contact</span>
           </a>
-        </Button>
+        </div>
       </div>
-    </div>
+    </nav>
   );
 };
 

@@ -3,10 +3,19 @@ import InstagramBot from "./Images/Projects/instagrambot.png";
 import Inventory from "./Images/Projects/inventory.png";
 import Typeform from "./Images/Projects/typeform.png";
 import JsQuiz from "./Images/Projects/jsquiz.png";
+import NseScraper from "./Images/Projects/nse-scraper.png";
 
 export const info = {
   name: "Anuj Singh",
   projects: [
+    {
+      title: "NSE Stock Data Scraper & Analytics Platform",
+      description:
+        "A comprehensive full-stack web application for downloading and analyzing Indian stock market data from NSE (National Stock Exchange). Built with Node.js/Express backend and React frontend, this tool provides lightning-fast data extraction using direct NSE API calls (10x faster than traditional web scraping). Features include real-time progress tracking, configurable stock lists, automated CSV export with historical price, volume, and delivery data. Perfect for financial analysis, algorithmic trading backtesting, and research purposes with comprehensive error handling and retry mechanisms.",
+      image: NseScraper,
+      github: "https://github.com/singhanuj620/nse_scrap",
+      demo: "",
+    },
     {
       title: "Javascript Interview Quiz",
       description:
@@ -87,8 +96,16 @@ export const info = {
       url: "https://img.icons8.com/color/240/000000/javascript--v1.png",
     },
     {
+      name: "TypeScript",
+      url: "https://img.icons8.com/color/144/000000/typescript.png",
+    },
+    {
       name: "ReactJS",
       url: "https://img.icons8.com/officel/80/000000/react.png",
+    },
+    {
+      name: "Next.js",
+      url: "https://img.icons8.com/fluency-systems-filled/144/000000/nextjs.png",
     },
     { name: "Redux", url: "https://img.icons8.com/color/48/null/redux.png" },
     {
@@ -98,6 +115,14 @@ export const info = {
     {
       name: "Python",
       url: "https://img.icons8.com/color/144/000000/python--v1.png",
+    },
+    {
+      name: "GEN AI",
+      url: "https://img.icons8.com/color/144/000000/artificial-intelligence.png",
+    },
+    {
+      name: "ChatGPT",
+      url: "https://img.icons8.com/color/144/000000/chatgpt.png",
     },
     {
       name: "MongoDB",

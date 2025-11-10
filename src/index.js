@@ -9,7 +9,7 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import RedirectResume from "./Components/RedirectToResume/redirectResume";
-import CaptchaPOC from "./Components/CaptchaPOC/CaptchaPOC";
+import BlogsPage from "./Pages/BlogsPage/BlogsPage";
 
 const router = createBrowserRouter([
   {
@@ -18,15 +18,15 @@ const router = createBrowserRouter([
     errorElement: <App />,
   },
   {
-    path: "/resume",
-    element: <RedirectResume />,
+    path: "/blogs",
+    element: <BlogsPage />,
     errorElement: <App />,
   },
   {
-    path: "/demo",
-    element: <CaptchaPOC />,
+    path: "/resume",
+    element: <RedirectResume />,
     errorElement: <App />,
-  },
+  }
 ]);
 
 ReactDOM.render(
