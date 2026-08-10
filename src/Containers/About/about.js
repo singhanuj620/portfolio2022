@@ -10,22 +10,22 @@ const About = () => {
         <div className="section_header">
           <div className="section_icon">👨‍💻</div>
           <h2 className="section_title">About Me</h2>
-          <p className="section_subtitle">My journey in tech & beyond</p>
+          <p className="section_subtitle">Product-minded frontend engineer</p>
         </div>
-        
+
         <div className="about_main">
           <div className="about_stats">
             <div className="stat_card">
-              <div className="stat_number">5+</div>
+              <div className="stat_number">6+</div>
               <div className="stat_label">Years Experience</div>
             </div>
             <div className="stat_card">
-              <div className="stat_number">50+</div>
-              <div className="stat_label">Projects Built</div>
+              <div className="stat_number">10+</div>
+              <div className="stat_label">Regions Impacted</div>
             </div>
             <div className="stat_card">
-              <div className="stat_number">15+</div>
-              <div className="stat_label">Tech Articles</div>
+              <div className="stat_number">20%</div>
+              <div className="stat_label">Core Web Vitals Lift</div>
             </div>
             <div className="stat_card">
               <div className="stat_number">∞</div>
@@ -38,45 +38,27 @@ const About = () => {
               <div className="about_timeline">
                 <h3 className="timeline_title">🚀 Professional Journey</h3>
                 <div className="modern_timeline">
-                  <div className="timeline_item">
-                    <div className="timeline_marker">
-                      <div className="marker_dot">
-                        <div className="marker_icon">💼</div>
-                      </div>
-                    </div>
-                    <div className="timeline_content">
-                      <div className="timeline_card">
-                        <div className="timeline_header">
-                          <h4 className="timeline_role">Specialist Programmer Level 2</h4>
-                          <span className="timeline_company">@ Infosys Ltd</span>
-                        </div>
-                        <div className="timeline_period">2022 - Present</div>
-                        <div className="timeline_description">
-                          Advanced full-stack development, leading technical initiatives and mentoring junior developers.
+                  {info.experience.map((item, index) => (
+                    <div className="timeline_item" key={`${item.company}-${index}`}>
+                      <div className="timeline_marker">
+                        <div className="marker_dot">
+                          <div className="marker_icon">{index === 0 ? "💼" : "💻"}</div>
                         </div>
                       </div>
-                    </div>
-                  </div>
-
-                  <div className="timeline_item">
-                    <div className="timeline_marker">
-                      <div className="marker_dot">
-                        <div className="marker_icon">💻</div>
-                      </div>
-                    </div>
-                    <div className="timeline_content">
-                      <div className="timeline_card">
-                        <div className="timeline_header">
-                          <h4 className="timeline_role">Specialist Programmer</h4>
-                          <span className="timeline_company">@ Infosys Ltd</span>
-                        </div>
-                        <div className="timeline_period">2020 - 2022</div>
-                        <div className="timeline_description">
-                          Full-stack development with ReactJS, Node.js, and modern web technologies.
+                      <div className="timeline_content">
+                        <div className="timeline_card">
+                          <div className="timeline_header">
+                            <h4 className="timeline_role">{item.role}</h4>
+                            <span className="timeline_company">@ {item.company}</span>
+                          </div>
+                          <div className="timeline_period">{item.duration}</div>
+                          <div className="timeline_description">
+                            {item.client ? `Client: ${item.client}` : "Enterprise frontend engineering"}
+                          </div>
                         </div>
                       </div>
                     </div>
-                  </div>
+                  ))}
 
                   <div className="timeline_item">
                     <div className="timeline_marker">
@@ -87,32 +69,12 @@ const About = () => {
                     <div className="timeline_content">
                       <div className="timeline_card">
                         <div className="timeline_header">
-                          <h4 className="timeline_role">Bachelor of Technology</h4>
-                          <span className="timeline_company">Computer Science Engineering</span>
+                          <h4 className="timeline_role">{info.education.degree}</h4>
+                          <span className="timeline_company">{info.education.institution}</span>
                         </div>
-                        <div className="timeline_period">2016 - 2020</div>
+                        <div className="timeline_period">{info.education.duration}</div>
                         <div className="timeline_description">
-                          AICTE - All India Council for Technical Education. Strong foundation in computer science fundamentals.
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div className="timeline_item">
-                    <div className="timeline_marker">
-                      <div className="marker_dot">
-                        <div className="marker_icon">📚</div>
-                      </div>
-                    </div>
-                    <div className="timeline_content">
-                      <div className="timeline_card">
-                        <div className="timeline_header">
-                          <h4 className="timeline_role">Higher Secondary Education</h4>
-                          <span className="timeline_company">St. Mary's School</span>
-                        </div>
-                        <div className="timeline_period">2015</div>
-                        <div className="timeline_description">
-                          Intermediate education with focus on science and mathematics.
+                          Strong foundation in computer science and engineering fundamentals.
                         </div>
                       </div>
                     </div>

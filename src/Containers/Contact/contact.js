@@ -1,41 +1,51 @@
 import React, { useState } from "react";
 import "./contact.css";
+import { info } from "../../info";
 
 const Contact = () => {
   const [hoveredCard, setHoveredCard] = useState(null);
+  const { profile } = info;
 
   const contactInfo = [
     {
       id: 1,
-      icon: "✉️",
-      title: "Email",
-      link: "mailto:singhanuj620@gmail.com",
-      display: "singhanuj620@gmail.com",
-      description: "Drop me a line anytime!"
+      icon: "📞",
+      title: "Phone",
+      link: `tel:${profile.phone}`,
+      display: profile.phone,
+      description: "Available for frontend engineering conversations"
     },
     {
       id: 2,
-      icon: "💼",
-      title: "LinkedIn",
-      link: "https://linkedin.com/in/anuj-singh-007",
-      display: "anuj-singh-007",
-      description: "Let's connect professionally"
+      icon: "✉️",
+      title: "Email",
+      link: `mailto:${profile.email}`,
+      display: profile.email,
+      description: "Reach out for product or engineering discussions"
     },
     {
       id: 3,
-      icon: "🚀",
-      title: "GitHub",
-      link: "https://github.com/singhanuj620",
-      display: "singhanuj620",
-      description: "Check out my code adventures"
+      icon: "💼",
+      title: "LinkedIn",
+      link: profile.linkedin,
+      display: "anuj-singh-007",
+      description: "Connect professionally"
     },
     {
       id: 4,
-      icon: "📝",
-      title: "Dev.to",
-      link: "https://dev.to/singhanuj620",
+      icon: "🚀",
+      title: "GitHub",
+      link: profile.github,
       display: "singhanuj620",
-      description: "Read my latest tech thoughts"
+      description: "Explore code and projects"
+    },
+    {
+      id: 5,
+      icon: "🌐",
+      title: "Website",
+      link: profile.website,
+      display: "anujsingh.net",
+      description: "Portfolio and work overview"
     }
   ];
 
@@ -82,7 +92,7 @@ const Contact = () => {
             <h3>Ready to start something amazing?</h3>
             <p>I'm always excited to work on new projects and collaborate with fellow developers.</p>
             <a 
-              href="mailto:singhanuj620@gmail.com" 
+              href={`mailto:${profile.email}`} 
               className="primary_cta_btn"
             >
               <span className="btn_icon">🚀</span>

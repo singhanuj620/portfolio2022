@@ -10,22 +10,14 @@ const App = () => {
   return (
     <div className="App">
       <Header />
-      <span id="projects"></span>
-      <br></br>
-      <br></br>
-      <Projects />
-      <span id="blogs"></span>
-      <br></br>
-      <br></br>
-      <Blogs />
       <span id="about"></span>
-      <br></br>
-      <br></br>
       <About />
       <span id="contact"></span>
-      <br></br>
-      <br></br>
       <Contact />
+      <span id="projects"></span>
+      <Projects />
+      <span id="blogs"></span>
+      <Blogs />
     </div>
   );
 };

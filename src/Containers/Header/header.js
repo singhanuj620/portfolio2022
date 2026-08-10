@@ -3,8 +3,11 @@ import "./header.css";
 import DP from "../../Images/dp.png";
 import NavbarComp from "../../Components/Navbar/navbar";
 import { Button } from "react-bootstrap";
+import { info } from "../../info";
 
 const header = () => {
+  const { profile } = info;
+
   return (
     <div className="header_container" id="home">
       <NavbarComp />
@@ -15,21 +18,21 @@ const header = () => {
             <span className="greeting-text">Hey there! I'm</span>
           </div>
           <div className="header_title">
-            <div className="name-line">Anuj Singh</div>
-            <div className="role-line">ReactJS / NextJS Frontend Developer</div>
+            <div className="name-line">{profile.name}</div>
+            <div className="role-line">{profile.role}</div>
           </div>
           <div className="header_tagline">
-            <span className="highlight">Crafting digital experiences</span> that matter
+            <span className="highlight">{profile.headline}</span>
           </div>
           <div className="header_description">
             <p>
-              🚀 Passionate about building <strong>modern, interactive web experiences</strong> with 5+ years of expertise in React.js, Next.js, and cutting-edge frontend technologies.
+              🚀 Senior Frontend Engineer with <strong>{profile.experience}</strong> of building scalable, high-performance digital products using React.js, Next.js, and TypeScript.
             </p>
             <p>
-              💡 Currently at <span className="company-highlight">Infosys</span>, turning complex ideas into intuitive user interfaces that perform flawlessly.
+              💡 Currently working at <span className="company-highlight">{profile.company}</span>, delivering enterprise-grade frontend experiences and GenAI-enabled user interfaces.
             </p>
             <p>
-              🎯 When not coding, you'll find me at the gym, badminton, video games or exploring new destinations, or vibing to bollywood classics!
+              🎯 I focus on architecture, performance, accessibility, headless CMS integration, and product experiences that scale across global markets.
             </p>
           </div>
           <div className="header_cta">
@@ -39,7 +42,7 @@ const header = () => {
                 <Button variant="primary" className="header_btn_div cta-primary">
                   <span className="header_btn">
                     <a
-                      href="https://drive.google.com/file/d/1IJs3MkQlTwzyf-EdcytPNLVDSeO91X-o/view?usp=share_link"
+                      href={profile.resumeUrl}
                       className="link"
                       target="_blank"
                       rel="noreferrer"
@@ -106,7 +109,7 @@ const header = () => {
                 </div>
                 <div className="author_info">
                   <div className="author_name">Apoorva Agarwal</div>
-                  <div className="author_title">Frontend Lead • Infosys</div>
+                  <div className="author_title">Frontend Lead • EPAM</div>
                 </div>
               </div>
             </div>

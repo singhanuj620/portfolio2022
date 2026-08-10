@@ -2,8 +2,10 @@ import React, { useState, useEffect } from "react";
 import { debounce } from "../../Utilities/helper";
 import "./navbar.css";
 import { FaGithub, FaLinkedin, FaDownload, FaEnvelope } from "react-icons/fa";
+import { info } from "../../info";
 
 const NavbarComp = () => {
+  const { profile } = info;
   const [prevScrollPos, setPrevScrollPos] = useState(0);
   const [visible, setVisible] = useState(false);
   const [activeSection, setActiveSection] = useState("home");
@@ -93,7 +95,7 @@ const NavbarComp = () => {
         {/* Social Links */}
         <div className="navbar_socials">
           <a
-            href="https://github.com/singhanuj620"
+            href={profile.github}
             target="_blank"
             rel="noopener noreferrer"
             className="social_link"
@@ -102,7 +104,7 @@ const NavbarComp = () => {
             <FaGithub />
           </a>
           <a
-            href="https://linkedin.com/in/anuj-singh-007"
+            href={profile.linkedin}
             target="_blank"
             rel="noopener noreferrer"
             className="social_link"
@@ -115,7 +117,7 @@ const NavbarComp = () => {
         {/* Action Buttons */}
         <div className="navbar_actions">
           <a
-            href="https://drive.google.com/file/d/1IJs3MkQlTwzyf-EdcytPNLVDSeO91X-o/view?usp=share_link"
+            href={profile.resumeUrl}
             target="_blank"
             rel="noopener noreferrer"
             className="action_btn secondary_btn"
